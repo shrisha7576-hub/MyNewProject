@@ -5,6 +5,12 @@ import streamlit as st
 st.title("Retail Business Dashboard")
 st.write("Manager input selection")
 st.number_input("enter number",n)
+option = st.selectbox(
+    "Enter the region ",
+    ["north","south","east","west"]
+)
+
+st.write("You selected:", option)
 
 
 # Instruction
