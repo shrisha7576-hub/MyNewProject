@@ -34,6 +34,6 @@ region = st.selectbox("Select Region:",
 if st.button("Submit"):
     st.write(f"Sales Target: ${sales_target}")
     st.write(f"Region Selected: {region}")
-    st.success("Dashboard updated successfully!")
+    st.error("Dashboard updated successfully!")
     if sales_target > 100000:
         st.write("Great! You have set an ambitious target!")
